@@ -7,25 +7,21 @@ const port = 3000;
 const router = express.Router();
 
 // set router path and initialize the API
-router.get('/', (req, res) => {
+router.get('/api/kordinators/signin', (req, res) => {
     res.json([{
-        "id": 1,
-        "nama": "Diterima",
-        "created_at": "2022-09-11T12:35:11.000000Z",
-        "updated_at": "2022-09-11T12:35:14.000000Z"
-        },
-        {
-            "id": 2,
-            "nama": "Belum Terima",
-            "created_at": "2022-09-11T12:35:18.000000Z",
-            "updated_at": "2022-09-11T12:35:16.000000Z"
-        },
-        {
-            "id": 3,
-            "nama": "Ditolak",
-            "created_at": "2022-09-11T12:35:27.000000Z",
-            "updated_at": "2022-09-11T12:35:29.000000Z"
-        }]);
+        "nik": "3322071208870001",
+        "nama": "aviq",
+        "no_hp": "085647907991",
+        "email": "aviq.baihaqy@gmail.com",
+        "alamat": "jl. ki gede sebayu Rt.03 Rw.04 Danawarih Kec. balapulang, balapulang",
+        "rt": "003",
+        "rw": "003",
+        "kelurahan_desa": "56567",
+        "kecamatan": "hhjg",
+        "kab_kota": "Kab. Tegal",
+        "provinsi": "jhkhj",
+        "kordinator_key": "531a3158c7fa8d988ac6795ab25185095d6bb316de4e2d94c498bfbfe49e3e85b7db7b3e0972eb354f031a10b464cb3970ef55b5c053b2a3afeea5b342a0f6e1"
+    }]);
 });
 
 app.use('/api', router);
